@@ -1,10 +1,53 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
+.nav {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(3, 135, 243);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav img {
+  height: 50px;
+  width: auto;
+  padding: 10px;
+
+}
+
+.main-view {
+  display:flex;
+  height: 80%;
+  width: 100%
+}
+
+.sidebar {
+  width: 20%;
+  border: 2px solid white;
+}
+
+.footer {
+  height: 10%;
+  border: 2px solid white;
+}
+
+.products {
+  border: 2px solid orange;
+  width: 80%;
+}
+
+/* 
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +82,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
