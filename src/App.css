@@ -28,7 +28,7 @@
 
 .main-view {
   display:flex;
-  height: 80%;
+  height: 85%;
   width: 100%
 }
 
@@ -38,8 +38,11 @@
 }
 
 .footer {
-  height: 10%;
+  height: 5%;
   border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .products {
