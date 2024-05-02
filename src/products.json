@@ -97,7 +97,7 @@
     "category": "laptops",
     "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
     "images": [
-      "https://i.dummyjson.com/data/products/6/1.png",
+      "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L2hpcHBvdW5pY29ybjc2X3dhdGVyY29sb3JfaWxsdXN0cmF0aW9uX29mX2xhcHRvcF9pc29sYXRlX2lsbHVzdF85ODc5ZmYwOS1iMjM5LTQ2ZDItYWM2Yi1iYzcwMjI3MGJmZTQucG5n.png",
       "https://i.dummyjson.com/data/products/6/2.jpg",
       "https://i.dummyjson.com/data/products/6/3.png",
       "https://i.dummyjson.com/data/products/6/4.jpg"
@@ -399,7 +399,7 @@
   },
   {
     "id": 23,
-    "title": "Orange Essence Food Flavou",
+    "title": "Orange Essence Food Flavour",
     "description": "Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item",
     "price": 14,
     "discountPercentage": 8.04,

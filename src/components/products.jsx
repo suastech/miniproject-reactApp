@@ -2,10 +2,8 @@ import ProductItem from './productitem.jsx';
 import ProductData from '../products.json';
 import { useState } from 'react';
 
-
+// could recall this ProductList
 function Products(){
-    console.log(ProductData);
-
     const [displayData, setDisplayData] = useState(ProductData);
 
     function removeItem(deleteItemID){
@@ -16,7 +14,7 @@ function Products(){
     return (
     <div className="products">
         {displayData.map(product => {
-            if(product.price <= 20) return <ProductItem key={product.id} itemdata={product} deleteItem={removeItem}/>
+            if(product.category === "smartphones" || product.category === "laptops") return <ProductItem key={product.id} itemdata={product} deleteItem={removeItem}/>
         })}
     </div>
     )

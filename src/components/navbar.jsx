@@ -2,8 +2,8 @@ function Navbar(){
 
    return (
     <div className="nav">
-        eCommerce App
-        <img src="logo.png"/>
+        Ironhack Electronics Store
+        <img src="../logo.png"/>
     </div>
    )
 

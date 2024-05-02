@@ -37,6 +37,10 @@
   border: 2px solid white;
 }
 
+a.active {
+  color: orange;
+}
+
 .footer {
   height: 5%;
   border: 2px solid white;
@@ -48,6 +52,15 @@
 .products {
   border: 2px solid orange;
   width: 80%;
+}
+
+.product-details{
+  margin: 0 auto;
+}
+
+.product-details img{
+  width: 200px;
+  height: 200px;
 }
 
 /* 
