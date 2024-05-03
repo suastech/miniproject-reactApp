@@ -11,7 +11,7 @@
     "category": "smartphones",
     "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
     "images": [
-      "https://i.dummyjson.com/data/products/1/1.jpg",
+      "https://www.apfelnews.de/wp-content/uploads/2020/02/iphone-2468714_1920.png",
       "https://i.dummyjson.com/data/products/1/2.jpg",
       "https://i.dummyjson.com/data/products/1/3.jpg",
       "https://i.dummyjson.com/data/products/1/4.jpg",
@@ -30,7 +30,7 @@
     "category": "smartphones",
     "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
     "images": [
-      "https://i.dummyjson.com/data/products/2/1.jpg",
+      "https://wefix.co.za/cdn/shop/products/iPhone-x-Black_1_3735f854-a201-45d9-9075-e7b63e613f43.png?v=1701412324",
       "https://i.dummyjson.com/data/products/2/2.jpg",
       "https://i.dummyjson.com/data/products/2/3.jpg",
       "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
@@ -47,7 +47,7 @@
     "brand": "Samsung",
     "category": "smartphones",
     "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-    "images": ["https://i.dummyjson.com/data/products/3/1.jpg"]
+    "images": ["https://blazing-tech.net/wp-content/uploads/2023/05/pixelcut-export-1682573589304.png"]
   },
   {
     "id": 4,
@@ -61,7 +61,7 @@
     "category": "smartphones",
     "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
     "images": [
-      "https://i.dummyjson.com/data/products/4/1.jpg",
+      "https://opsg-img-cdn-gl.heytapimg.com/epb/202207/07/hxwnSiSJ89urUqAQ.png?x-amz-process=image/format,webp/quality,Q_80",
       "https://i.dummyjson.com/data/products/4/2.jpg",
       "https://i.dummyjson.com/data/products/4/3.jpg",
       "https://i.dummyjson.com/data/products/4/4.jpg",
@@ -80,7 +80,7 @@
     "category": "smartphones",
     "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
     "images": [
-      "https://i.dummyjson.com/data/products/5/1.jpg",
+      "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/list-image/phones/p30/P30_skyblue.png",
       "https://i.dummyjson.com/data/products/5/2.jpg",
       "https://i.dummyjson.com/data/products/5/3.jpg"
     ]
@@ -97,10 +97,7 @@
     "category": "laptops",
     "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
     "images": [
-      "https://i.dummyjson.com/data/products/6/1.png",
-      "https://i.dummyjson.com/data/products/6/2.jpg",
-      "https://i.dummyjson.com/data/products/6/3.png",
-      "https://i.dummyjson.com/data/products/6/4.jpg"
+      "https://m.media-amazon.com/images/I/71CeaGJHH+L._AC_SY300_SX300_.jpg"
     ]
   },
   {
@@ -115,10 +112,7 @@
     "category": "laptops",
     "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
     "images": [
-      "https://i.dummyjson.com/data/products/7/1.jpg",
-      "https://i.dummyjson.com/data/products/7/2.jpg",
-      "https://i.dummyjson.com/data/products/7/3.jpg",
-      "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+      "https://m.media-amazon.com/images/I/816uW9q6BKS.__AC_SY300_SX300_QL70_ML2_.jpg"
     ]
   },
   {
@@ -133,11 +127,7 @@
     "category": "laptops",
     "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
     "images": [
-      "https://i.dummyjson.com/data/products/8/1.jpg",
-      "https://i.dummyjson.com/data/products/8/2.jpg",
-      "https://i.dummyjson.com/data/products/8/3.jpg",
-      "https://i.dummyjson.com/data/products/8/4.jpg",
-      "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+      "https://m.media-amazon.com/images/I/51fE7FmJZ2L.__AC_SY300_SX300_QL70_ML2_.jpg"
     ]
   },
   {
@@ -152,7 +142,7 @@
     "category": "laptops",
     "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
     "images": [
-      "https://i.dummyjson.com/data/products/9/1.jpg",
+      "https://m.media-amazon.com/images/I/61G9Yr3n6rL._AC_SX679_.jpg",
       "https://i.dummyjson.com/data/products/9/2.png",
       "https://i.dummyjson.com/data/products/9/3.png",
       "https://i.dummyjson.com/data/products/9/4.jpg",
@@ -170,12 +160,7 @@
     "brand": "HP Pavilion",
     "category": "laptops",
     "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
-    "images": [
-      "https://i.dummyjson.com/data/products/10/1.jpg",
-      "https://i.dummyjson.com/data/products/10/2.jpg",
-      "https://i.dummyjson.com/data/products/10/3.jpg",
-      "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
-    ]
+    "images": ["https://m.media-amazon.com/images/I/816uW9q6BKS.__AC_SY300_SX300_QL70_ML2_.jpg"]
   },
   {
     "id": 11,
@@ -189,7 +174,7 @@
     "category": "fragrances",
     "thumbnail": "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
     "images": [
-      "https://i.dummyjson.com/data/products/11/1.jpg",
+      "https://m.media-amazon.com/images/I/61DF0nkzgxL.__AC_SY300_SX300_QL70_FMwebp_.jpg",
       "https://i.dummyjson.com/data/products/11/2.jpg",
       "https://i.dummyjson.com/data/products/11/3.jpg",
       "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
@@ -399,7 +384,7 @@
   },
   {
     "id": 23,
-    "title": "Orange Essence Food Flavou",
+    "title": "Orange Essence Food Flavour",
     "description": "Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item",
     "price": 14,
     "discountPercentage": 8.04,
