@@ -63,6 +63,20 @@ a.active {
   height: 200px;
 }
 
+#not-found {
+  width: 70%;
+}
+
+#about {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.person {
+  margin-top: 10px;
+}
+
 /* 
 .logo {
   height: 6em;
