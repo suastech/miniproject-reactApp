@@ -1,6 +1,4 @@
-import { useState } from 'react'
 import {Routes, Route} from 'react-router-dom'
-import viteLogo from '/vite.svg'
 import Products from './components/products.jsx';
 import Navbar from './components/navbar.jsx'
 import Sidebar from './components/sidebar.jsx'
@@ -11,7 +9,6 @@ import About from './components/About.jsx';
 import NotFound from './components/NotFound.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

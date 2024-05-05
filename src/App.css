@@ -50,7 +50,6 @@ a.active {
 }
 
 .products {
-  border: 2px solid orange;
   width: 80%;
 }
 
@@ -64,11 +63,11 @@ a.active {
 }
 
 #not-found {
-  width: 70%;
+  width: 80%;
 }
 
 #about {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
 }
