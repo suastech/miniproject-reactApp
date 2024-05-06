@@ -1,19 +1,16 @@
 import ProductItem from './productitem.jsx';
-import ProductData from '../products.json';
-import { useState } from 'react';
 
 // could recall this ProductList
-function Products(){
-    const [displayData, setDisplayData] = useState(ProductData);
+function Products(props){
 
     function removeItem(deleteItemID){
-        let newData = displayData.filter(item => item.id !== deleteItemID)
-        setDisplayData(newData);
+        let newData = props.displayData.filter(item => item.id !== deleteItemID)
+        props.setDisplayData(newData);
     }
 
     return (
     <div className="products">
-        {displayData.map(product => {
+        {props.displayData.map(product => {
             if(product.category === "smartphones" || product.category === "laptops") return <ProductItem key={product.id} itemdata={product} deleteItem={removeItem}/>
         })}
     </div>

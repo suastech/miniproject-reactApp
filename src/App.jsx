@@ -7,8 +7,11 @@ import ProductDetails from './components/productdetails.jsx'
 import './App.css'
 import About from './components/About.jsx';
 import NotFound from './components/NotFound.jsx';
+import ProductData from './products.json';
+import { useState } from 'react';
 
 function App() {
+  const [displayData, setDisplayData] = useState(ProductData);
 
   return (
     <>
@@ -16,7 +19,7 @@ function App() {
       <div className="main-view">
       <Sidebar/>
       <Routes>
-        <Route path="/" element={<Products/>}/>
+        <Route path="/" element={<Products displayData={displayData} setDisplayData={setDisplayData}/>}/>
         <Route path="/about" element={<About/>}/>        
         <Route path="*" element={<NotFound/>}/>
         <Route path="/products/:productID" element={<ProductDetails/>}/>
