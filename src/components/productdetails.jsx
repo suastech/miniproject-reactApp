@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom'
-import ProductData from '../products.json'; 
+// import ProductData from '../products.json'; 
 // we cannot use props from a sibling, so i need to reimport or get it from app.jsx
 
-function ProductDetails(){
+function ProductDetails(props){
 
     // we are getting an object from useParams()
 
@@ -13,7 +13,7 @@ function ProductDetails(){
 
     console.log(productID)
 
-    const product = ProductData.find(element => element.id === parseInt(productID))
+    const product = props.displayData.find(element => element.id === parseInt(productID))
     
 
     console.log(product)

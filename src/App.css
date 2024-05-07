@@ -34,7 +34,7 @@
 
 .sidebar {
   width: 20%;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 a.active {
@@ -43,7 +43,7 @@ a.active {
 
 .footer {
   height: 5%;
-  border: 2px solid white;
+  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,6 +51,12 @@ a.active {
 
 .products {
   width: 80%;
+  border: 1px solid white;
+}
+
+.add-product{
+  width: 80%;
+  border: 1px solid white;
 }
 
 .product-details{
@@ -64,12 +70,14 @@ a.active {
 
 #not-found {
   width: 80%;
+  border: 1px solid white;
 }
 
 #about {
   width: 80%;
   display: flex;
   justify-content: space-evenly;
+  border: 1px solid white;
 }
 
 .person {

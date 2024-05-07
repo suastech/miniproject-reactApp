@@ -1,5 +1,7 @@
 import {Routes, Route} from 'react-router-dom'
 import Products from './components/products.jsx';
+import AddProduct from './components/AddProduct.jsx';
+import EditProduct from './components/EditProduct.jsx';
 import Navbar from './components/navbar.jsx'
 import Sidebar from './components/sidebar.jsx'
 import Footer from './components/footer.jsx'
@@ -21,8 +23,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Products displayData={displayData} setDisplayData={setDisplayData}/>}/>
         <Route path="/about" element={<About/>}/>        
+        <Route path="/addproduct" element={<AddProduct displayData={displayData} setDisplayData={setDisplayData}/>}/> 
         <Route path="*" element={<NotFound/>}/>
-        <Route path="/products/:productID" element={<ProductDetails/>}/>
+        <Route path="/products/:productID" element={<ProductDetails displayData={displayData}/>}/>
+        <Route path="/products/edit/:productID" element={<EditProduct displayData={displayData} setDisplayData={setDisplayData}/>}/>
       </Routes>
       </div>
       <Footer/>
