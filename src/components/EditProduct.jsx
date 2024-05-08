@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 function EditProduct(props){
+
+    const navigate = useNavigate();
 
     const {productID} = useParams();
 
@@ -35,6 +37,7 @@ function EditProduct(props){
         newArray.splice(foundElement,1, newItem);
         console.log(newArray)
         props.setDisplayData(newArray);
+        navigate(`/products/${productID}`)
       }
 
 
@@ -54,7 +57,11 @@ function EditProduct(props){
               <input name="rating" type="number" onChange={handleChange} placeholder={product.rating} /><br/>
               <input name="stock" type="number" onChange={handleChange} placeholder={product.stock} /><br/>
               <input name="brand" type="text" onChange={handleChange} placeholder={product.brand} /><br/>
-              <input name="category" type="text" onChange={handleChange} placeholder={product.category} /><br/>
+              <select name="category" onChange={handleChange}>
+                <option value="smartphones" selected={product.category == "smartphones"}>Smartphones</option>
+                <option value="laptops" selected={product.category == "laptops"}>Laptops</option>
+              </select><br/>
+              {/* <input name="category" type="text" onChange={handleChange} placeholder={product.category} /><br/> */}
               <input name="thumbnail" type="url" onChange={handleChange} placeholder={product.thumbnail} /><br/>
               <input name="images" type="url" onChange={handleImage} placeholder={product.images} /><br/>             
               <button>Save changes</button>

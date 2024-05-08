@@ -3,9 +3,9 @@ import {NavLink} from 'react-router-dom'
 function Sidebar(){
     return (
         <div className="sidebar">
-            <NavLink to="/">Home</NavLink><br></br>
-            <NavLink to="/addproduct">Add Product</NavLink><br></br>
-            <NavLink to="/about">About</NavLink>
+            <button><NavLink to="/">Home</NavLink></button><br></br>
+            <button><NavLink to="/addproduct" className="nav-btn">Add Product</NavLink></button><br></br>
+            <button><NavLink to="/about" className="nav-btn">About</NavLink></button>
         </div>
     )
 }

@@ -2,7 +2,7 @@ function Navbar(){
 
    return (
     <div className="nav">
-        Ironhack Electronics Store
+        <b>Ironhack Electronics Store</b>
         <img src="../logo.png"/>
     </div>
    )

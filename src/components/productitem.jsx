@@ -5,13 +5,13 @@ function ProductItem(props){
     return (
     
     <div className="item-container">
-        <img src={props.itemdata.images[0]}/>
+        {props.itemdata.images[0] ? <img src={props.itemdata.images[0]}/> : <img src="../logo.png"/>}
         <p style={{width:'200px'}}>{props.itemdata.title}</p>
         <p>${props.itemdata.price}</p>
         <div>
             <Link to={`/products/${props.itemdata.id}`}><button>Details</button></Link>
-            <button onClick={() => {props.deleteItem(props.itemdata.id)}}>Delete</button>
             <Link to={`/products/edit/${props.itemdata.id}`}><button>Edit</button></Link>
+            <button onClick={() => {props.deleteItem(props.itemdata.id)}}>Delete</button>
         </div>
     </div>
     

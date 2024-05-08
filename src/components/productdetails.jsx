@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 // import ProductData from '../products.json'; 
 // we cannot use props from a sibling, so i need to reimport or get it from app.jsx
 
@@ -28,6 +28,8 @@ function ProductDetails(props){
         <p>Stock: {product.stock} items</p>
         <p>Category: {product.category}</p>
         <p><img src={product.images[0]}/></p>
+        <Link to={`/`}><button className="back-btn">Back</button></Link>
+
 
         </div>
 

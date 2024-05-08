@@ -1,8 +1,11 @@
 function Footer(){
     return (
+    <>
+    <hr/>
     <div className="footer">
         <a href="https://github.com/suastech/miniproject-reactApp" target="_blank">Github Repository</a>
     </div>
+    </>
     )
 }
 

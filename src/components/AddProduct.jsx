@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function AddProduct(props){
+
+    const navigate = useNavigate();
 
     const [newItem, setNewItem] = useState({});
 
@@ -28,6 +31,7 @@ function AddProduct(props){
         newDisplayData.push(newItem);
 
         props.setDisplayData(newDisplayData);
+        navigate(`/products/${newItem.id}`)
         console.log(newDisplayData)
     }
 
@@ -50,7 +54,11 @@ function AddProduct(props){
               <input name="rating" type="number" onChange={handleChange} placeholder="Rating" /><br/>
               <input name="stock" type="number" onChange={handleChange} placeholder="Stock" /><br/>
               <input name="brand" type="text" onChange={handleChange} placeholder="Brand" /><br/>
-              <input name="category" type="text" onChange={handleChange} placeholder="Category" /><br/>
+              {/* <input name="category" type="text" onChange={handleChange} placeholder="Category" /><br/> */}
+              <select name="category" onChange={handleChange}>
+                <option value="smartphones">Smartphones</option>
+                <option value="laptops">Laptops</option>
+              </select><br/>
               <input name="thumbnail" type="url" onChange={handleChange} placeholder="Thumbnail URL" /><br/>
               <input name="images" type="url" onChange={handleImage} placeholder="Image URL" /><br/>
                 <button>Add Product</button>
