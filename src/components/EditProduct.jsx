@@ -5,14 +5,13 @@ function EditProduct(props){
 
     const {productID} = useParams();
 
-    console.log(productID)
+    //console.log(productID)
 
     const product = props.displayData.find(element => element.id === parseInt(productID))
 
-    console.log(product)
+    //console.log(product)
 
-    // we need to change all the logic below to make a product change
-    const [newItem, setNewItem] = useState(product);
+    const [newItem, setNewItem] = useState({...product});
 
     const handleChange = (e) => {
         const newObject = {...newItem}; 
@@ -26,21 +25,22 @@ function EditProduct(props){
         setNewItem(newObject)
       }
 
-    function addItem(){
-        let newDisplayData = [...props.displayData]
-        let arrayOfIds = props.displayData.map ( element => element.id)
-        let itemId = Math.max(... arrayOfIds)+1
-        newItem.id = itemId;
-        newDisplayData.push(newItem);
+      function editItem () {
+        let id = parseInt(productID)
+        console.log(props.displayData[0])
 
-        props.setDisplayData(newDisplayData);
-        console.log(newDisplayData)
-    }
+        const foundElement = props.displayData.findIndex( element => element.id === id);
+
+        const newArray = [... props.displayData]; 
+        newArray.splice(foundElement,1, newItem);
+        console.log(newArray)
+        props.setDisplayData(newArray);
+      }
 
 
     function handleSubmit(e) {
         e.preventDefault();
-        addItem();
+        editItem();
     }
     
 
@@ -49,8 +49,24 @@ function EditProduct(props){
     return (
         <div className="add-product">
             <form onSubmit={handleSubmit}>
-              <input name="title" type="text" value={product.title} onChange={handleChange} placeholder="Title" /><br/>
-              <input name="description" type="text" value ={product.description} onChange={handleChange} placeholder="Description" /><br/>
+              <input name="title" type="text" onChange={handleChange} placeholder={product.title} /><br/>
+              <input name="description" type="text" onChange={handleChange} placeholder={product.description} /><br/>
+              <input name="price" type="number" onChange={handleChange} placeholder={product.price} /><br/>
+              <input name="discountPercentage" type="number" onChange={handleChange} placeholder={product.discountPercentage} /><br/>
+              <input name="rating" type="number" onChange={handleChange} placeholder={product.rating} /><br/>
+              <input name="stock" type="number" onChange={handleChange} placeholder={product.stock} /><br/>
+              <input name="brand" type="text" onChange={handleChange} placeholder={product.brand} /><br/>
+              <input name="category" type="text" onChange={handleChange} placeholder={product.category} /><br/>
+              <input name="thumbnail" type="url" onChange={handleChange} placeholder={product.thumbnail} /><br/>
+              <input name="images" type="url" onChange={handleImage} placeholder={product.images} /><br/>             
+              <button>Save changes</button>
+            </form>
+        </div>
+    )
+}
+
+//Original version of the inputs with "value": 
+{/* <input name="description" type="text" value ={product.description} onChange={handleChange} placeholder="Description" /><br/>
               <input name="price" type="number" value={product.price} onChange={handleChange} placeholder="Price in $" /><br/>
               <input name="discountPercentage" value={product.discountPercentage} type="number" onChange={handleChange} placeholder="Discount in %" /><br/>
               <input name="rating" type="number" value={product.rating} onChange={handleChange} placeholder="Rating" /><br/>
@@ -58,12 +74,7 @@ function EditProduct(props){
               <input name="brand" type="text" value={product.brand} onChange={handleChange} placeholder="Brand" /><br/>
               <input name="category" type="text" value={product.category} onChange={handleChange} placeholder="Category" /><br/>
               <input name="thumbnail" type="url" value={product.thumbnail} onChange={handleChange} placeholder="Thumbnail URL" /><br/>
-              <input name="images" type="url" value={product.images} onChange={handleImage} placeholder="Image URL" /><br/>
-                <button>Save changes</button>
-            </form>
-        </div>
-    )
-}
+              <input name="images" type="url" value={product.images} onChange={handleImage} placeholder="Image URL" /><br/> */}
 
 // "id": 1,
 // "title": "iPhone 9",
