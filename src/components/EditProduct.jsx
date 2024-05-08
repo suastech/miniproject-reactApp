@@ -50,20 +50,20 @@ function EditProduct(props){
         <div className="add-product">
             <form onSubmit={handleSubmit} className="edit-form">
               <h4>Introduce the new values</h4>
-              <input name="title" type="text" onChange={handleChange} placeholder={product.title} /><br/>
-              <input name="description" type="text" onChange={handleChange} placeholder={product.description} /><br/>
-              <input name="price" type="number" onChange={handleChange} placeholder={product.price} /><br/>
-              <input name="discountPercentage" type="number" onChange={handleChange} placeholder={product.discountPercentage} /><br/>
-              <input name="rating" type="number" onChange={handleChange} placeholder={product.rating} /><br/>
-              <input name="stock" type="number" onChange={handleChange} placeholder={product.stock} /><br/>
-              <input name="brand" type="text" onChange={handleChange} placeholder={product.brand} /><br/>
+              <input name="title" type="text" onChange={handleChange} placeholder={product.title} />
+              <input name="description" type="text" onChange={handleChange} placeholder={product.description} />
+              <input name="price" type="number" onChange={handleChange} placeholder={product.price} />
+              <input name="discountPercentage" type="number" onChange={handleChange} placeholder={product.discountPercentage} />
+              <input name="rating" type="number" onChange={handleChange} placeholder={product.rating} />
+              <input name="stock" type="number" onChange={handleChange} placeholder={product.stock} />
+              <input name="brand" type="text" onChange={handleChange} placeholder={product.brand} />
               <select name="category" onChange={handleChange}>
                 <option value="smartphones" selected={product.category == "smartphones"}>Smartphones</option>
                 <option value="laptops" selected={product.category == "laptops"}>Laptops</option>
-              </select><br/>
-              {/* <input name="category" type="text" onChange={handleChange} placeholder={product.category} /><br/> */}
-              <input name="thumbnail" type="url" onChange={handleChange} placeholder={product.thumbnail} /><br/>
-              <input name="images" type="url" onChange={handleImage} placeholder={product.images} /><br/>             
+              </select>
+              {/* <input name="category" type="text" onChange={handleChange} placeholder={product.category} /> */}
+              <input name="thumbnail" type="url" onChange={handleChange} placeholder={product.thumbnail} />
+              <input name="images" type="url" onChange={handleImage} placeholder={product.images} />             
               <button>Save changes</button>
             </form>
         </div>
@@ -71,15 +71,15 @@ function EditProduct(props){
 }
 
 //Original version of the inputs with "value": 
-{/* <input name="description" type="text" value ={product.description} onChange={handleChange} placeholder="Description" /><br/>
-              <input name="price" type="number" value={product.price} onChange={handleChange} placeholder="Price in $" /><br/>
-              <input name="discountPercentage" value={product.discountPercentage} type="number" onChange={handleChange} placeholder="Discount in %" /><br/>
-              <input name="rating" type="number" value={product.rating} onChange={handleChange} placeholder="Rating" /><br/>
-              <input name="stock" type="number" value={product.stock} onChange={handleChange} placeholder="Stock" /><br/>
-              <input name="brand" type="text" value={product.brand} onChange={handleChange} placeholder="Brand" /><br/>
-              <input name="category" type="text" value={product.category} onChange={handleChange} placeholder="Category" /><br/>
-              <input name="thumbnail" type="url" value={product.thumbnail} onChange={handleChange} placeholder="Thumbnail URL" /><br/>
-              <input name="images" type="url" value={product.images} onChange={handleImage} placeholder="Image URL" /><br/> */}
+{/* <input name="description" type="text" value ={product.description} onChange={handleChange} placeholder="Description" />
+              <input name="price" type="number" value={product.price} onChange={handleChange} placeholder="Price in $" />
+              <input name="discountPercentage" value={product.discountPercentage} type="number" onChange={handleChange} placeholder="Discount in %" />
+              <input name="rating" type="number" value={product.rating} onChange={handleChange} placeholder="Rating" />
+              <input name="stock" type="number" value={product.stock} onChange={handleChange} placeholder="Stock" />
+              <input name="brand" type="text" value={product.brand} onChange={handleChange} placeholder="Brand" />
+              <input name="category" type="text" value={product.category} onChange={handleChange} placeholder="Category" />
+              <input name="thumbnail" type="url" value={product.thumbnail} onChange={handleChange} placeholder="Thumbnail URL" />
+              <input name="images" type="url" value={product.images} onChange={handleImage} placeholder="Image URL" /> */}
 
 // "id": 1,
 // "title": "iPhone 9",

@@ -47,20 +47,20 @@ function AddProduct(props){
     return (
         <div className="add-product">
             <form onSubmit={handleSubmit} className="edit-form">
-              <input name="title" type="text" onChange={handleChange} placeholder="Title" /><br/>
-              <input name="description" type="text" onChange={handleChange} placeholder="Description" /><br/>
-              <input name="price" type="number" onChange={handleChange} placeholder="Price in $" /><br/>
-              <input name="discountPercentage" type="number" onChange={handleChange} placeholder="Discount in %" /><br/>
-              <input name="rating" type="number" onChange={handleChange} placeholder="Rating" /><br/>
-              <input name="stock" type="number" onChange={handleChange} placeholder="Stock" /><br/>
-              <input name="brand" type="text" onChange={handleChange} placeholder="Brand" /><br/>
-              {/* <input name="category" type="text" onChange={handleChange} placeholder="Category" /><br/> */}
-              <select name="category" onChange={handleChange}>
-                <option value="smartphones">Smartphones</option>
+              <input name="title" type="text" onChange={handleChange} placeholder="Title" required/>
+              <input name="description" type="text" onChange={handleChange} placeholder="Description" required />
+              <input name="price" type="number" onChange={handleChange} placeholder="Price in $" required/>
+              <input name="discountPercentage" type="number" onChange={handleChange} placeholder="Discount in %" required />
+              <input name="rating" type="number" onChange={handleChange} placeholder="Rating" required/>
+              <input name="stock" type="number" onChange={handleChange} placeholder="Stock" required/>
+              <input name="brand" type="text" onChange={handleChange} placeholder="Brand" required/>
+              {/* <input name="category" type="text" onChange={handleChange} placeholder="Category" /> */}
+              <select name="category" onChange={handleChange} required>
+                <option selected value="smartphones">Smartphones</option>
                 <option value="laptops">Laptops</option>
-              </select><br/>
-              <input name="thumbnail" type="url" onChange={handleChange} placeholder="Thumbnail URL" /><br/>
-              <input name="images" type="url" onChange={handleImage} placeholder="Image URL" /><br/>
+              </select>
+              <input name="thumbnail" type="url" onChange={handleChange} placeholder="Thumbnail URL" required/>
+              <input name="images" type="url" onChange={handleImage} placeholder="Image URL" required/>
                 <button>Add Product</button>
             </form>
         </div>
