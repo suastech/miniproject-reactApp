@@ -10,9 +10,9 @@ function Products(props){
 
     return (
     <div className="products">
-        {props.displayData.map(product => {
+        {props.displayData.map( (product, index) => {
             if(product.category === "smartphones" || product.category === "laptops") return (
-                <div key={product.id} className={ product.id %2 === 0? "pale-background": ""}  >
+                <div key={index} className={ index %2 === 0? "pale-background": ""}  >
                     <ProductItem  itemdata={product} deleteItem={removeItem}/>
                 </div>
             )
