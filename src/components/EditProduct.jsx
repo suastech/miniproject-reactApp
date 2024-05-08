@@ -43,12 +43,10 @@ function EditProduct(props){
         editItem();
     }
     
-
-    // addItem()
-
     return (
         <div className="add-product">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="edit-form">
+              <h4>Introduce the new values</h4>
               <input name="title" type="text" onChange={handleChange} placeholder={product.title} /><br/>
               <input name="description" type="text" onChange={handleChange} placeholder={product.description} /><br/>
               <input name="price" type="number" onChange={handleChange} placeholder={product.price} /><br/>

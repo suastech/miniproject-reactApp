@@ -16,21 +16,25 @@ function App() {
   const [displayData, setDisplayData] = useState(ProductData);
 
   return (
-    <>
-      <Navbar/>
+  <>
+    <Navbar/>
+
       <div className="main-view">
-      <Sidebar/>
-      <Routes>
-        <Route path="/" element={<Products displayData={displayData} setDisplayData={setDisplayData}/>}/>
-        <Route path="/about" element={<About/>}/>        
-        <Route path="/addproduct" element={<AddProduct displayData={displayData} setDisplayData={setDisplayData}/>}/> 
-        <Route path="*" element={<NotFound/>}/>
-        <Route path="/products/:productID" element={<ProductDetails displayData={displayData}/>}/>
-        <Route path="/products/edit/:productID" element={<EditProduct displayData={displayData} setDisplayData={setDisplayData}/>}/>
-      </Routes>
+        <Sidebar/>
+
+        <Routes>
+          <Route path="/" element={<Products displayData={displayData} setDisplayData={setDisplayData}/>}/>
+          <Route path="/about" element={<About/>}/>        
+          <Route path="/addproduct" element={<AddProduct displayData={displayData} setDisplayData={setDisplayData}/>}/> 
+          <Route path="*" element={<NotFound/>}/>
+          <Route path="/products/:productID" element={<ProductDetails displayData={displayData}/>}/>
+          <Route path="/products/edit/:productID" element={<EditProduct displayData={displayData} setDisplayData={setDisplayData}/>}/>
+        </Routes>
+
       </div>
-      <Footer/>
-    </>
+
+    <Footer/>
+  </>
   )
 }
 

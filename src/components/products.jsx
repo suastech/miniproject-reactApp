@@ -11,7 +11,11 @@ function Products(props){
     return (
     <div className="products">
         {props.displayData.map(product => {
-            if(product.category === "smartphones" || product.category === "laptops") return <ProductItem key={product.id} itemdata={product} deleteItem={removeItem}/>
+            if(product.category === "smartphones" || product.category === "laptops") return (
+                <div key={product.id} className={ product.id %2 === 0? "pale-background": ""}  >
+                    <ProductItem  itemdata={product} deleteItem={removeItem}/>
+                </div>
+            )
         })}
     </div>
     )

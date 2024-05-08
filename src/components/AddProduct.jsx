@@ -42,7 +42,7 @@ function AddProduct(props){
 
     return (
         <div className="add-product">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="edit-form">
               <input name="title" type="text" onChange={handleChange} placeholder="Title" /><br/>
               <input name="description" type="text" onChange={handleChange} placeholder="Description" /><br/>
               <input name="price" type="number" onChange={handleChange} placeholder="Price in $" /><br/>
