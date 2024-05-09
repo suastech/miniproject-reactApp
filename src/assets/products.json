@@ -97,7 +97,7 @@
     "category": "laptops",
     "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
     "images": [
-      "https://m.media-amazon.com/images/I/71CeaGJHH+L._AC_SY300_SX300_.jpg"
+      "https://images.freeimages.com/fic/images/icons/1699/elegant/256/laptop.png"
     ]
   },
   {
@@ -112,7 +112,7 @@
     "category": "laptops",
     "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
     "images": [
-      "https://m.media-amazon.com/images/I/816uW9q6BKS.__AC_SY300_SX300_QL70_ML2_.jpg"
+      "https://images.freeimages.com/fic/images/icons/315/hydropro_v2/512/laptop.png"
     ]
   },
   {
@@ -127,7 +127,7 @@
     "category": "laptops",
     "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
     "images": [
-      "https://m.media-amazon.com/images/I/51fE7FmJZ2L.__AC_SY300_SX300_QL70_ML2_.jpg"
+      "https://images.freeimages.com/fic/images/icons/1035/human_o2/128/computer_laptop.png"
     ]
   },
   {
@@ -142,7 +142,7 @@
     "category": "laptops",
     "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
     "images": [
-      "https://m.media-amazon.com/images/I/61G9Yr3n6rL._AC_SX679_.jpg",
+      "https://images.freeimages.com/fic/images/icons/1773/free/256/laptop_grey.png",
       "https://i.dummyjson.com/data/products/9/2.png",
       "https://i.dummyjson.com/data/products/9/3.png",
       "https://i.dummyjson.com/data/products/9/4.jpg",
@@ -160,7 +160,7 @@
     "brand": "HP Pavilion",
     "category": "laptops",
     "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
-    "images": ["https://m.media-amazon.com/images/I/816uW9q6BKS.__AC_SY300_SX300_QL70_ML2_.jpg"]
+    "images": ["https://images.freeimages.com/fic/images/icons/1014/ivista/256/laptop.png"]
   },
   {
     "id": 11,
@@ -174,7 +174,7 @@
     "category": "fragrances",
     "thumbnail": "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
     "images": [
-      "https://m.media-amazon.com/images/I/61DF0nkzgxL.__AC_SY300_SX300_QL70_FMwebp_.jpg",
+      "https://images.freeimages.com/fic/images/icons/1014/ivista/256/laptop.png",
       "https://i.dummyjson.com/data/products/11/2.jpg",
       "https://i.dummyjson.com/data/products/11/3.jpg",
       "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
