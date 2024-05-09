@@ -43,7 +43,7 @@ function AddProduct(props){
     return (
         <div className="add-product">
             <form onSubmit={handleSubmit} className="edit-form">
-            <h4>Add Product</h4>
+            <h4>Enter Product Details</h4>
             <div className="form-wrapper">
                 <div className="labels">
                         <label htmlFor="title">Title</label>
@@ -57,18 +57,18 @@ function AddProduct(props){
                         <label htmlFor="images">Image (URL)</label>
                     </div>
                 <div className="inputs">
-              <input name="title" id="title" type="text" onChange={handleChange} placeholder="Title" required/>
-              <input name="description" id="description" type="text" onChange={handleChange} placeholder="Description" required />
-              <input name="price" id="price" type="number" onChange={handleChange} placeholder="Price in $" required/>
-              <input name="discountPercentage" id="discountPercentage" min="0" max="100" step=".01" type="number" onChange={handleChange} placeholder="Discount in %" required />
-              <input name="rating" type="number" id="rating" min="1" max="5" step=".01" onChange={handleChange} placeholder="Rating" required/>
-              <input name="stock" type="number" id="stock" min="0" step="1" onChange={handleChange} placeholder="Stock" required/>
-              <input name="brand" type="text" id="brand" onChange={handleChange} placeholder="Brand" required/>
+              <input name="title" id="title" type="text" onChange={handleChange} placeholder="iPhone 12" required/>
+              <input name="description" id="description" type="text" onChange={handleChange} placeholder="ultra-long battery life" required />
+              <input name="price" id="price" type="number" onChange={handleChange} placeholder="499" required/>
+              <input name="discountPercentage" id="discountPercentage" min="0" max="100" step=".01" type="number" onChange={handleChange} placeholder="43" required />
+              <input name="rating" type="number" id="rating" min="1" max="5" step=".01" onChange={handleChange} placeholder="4.5" required/>
+              <input name="stock" type="number" id="stock" min="0" step="1" onChange={handleChange} placeholder="20" required/>
+              <input name="brand" type="text" id="brand" onChange={handleChange} placeholder="Apple" required/>
               <select name="category" id="category" onChange={handleChange} required>
                 <option value="smartphones">Smartphones</option>
                 <option value="laptops">Laptops</option>
               </select>
-              <input name="images" id="images" type="url" onChange={handleImage} placeholder="Image URL" required/>
+              <input name="images" id="images" type="url" onChange={handleImage} placeholder="Enter Image URL" required/>
               </div>
             </div>
             <button>Add Product</button>
