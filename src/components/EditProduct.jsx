@@ -83,28 +83,4 @@ function EditProduct(props){
     )
 }
 
-//Original version of the inputs with "value": 
-{/* <input name="description" type="text" value ={product.description} onChange={handleChange} placeholder="Description" />
-              <input name="price" type="number" value={product.price} onChange={handleChange} placeholder="Price in $" />
-              <input name="discountPercentage" value={product.discountPercentage} type="number" onChange={handleChange} placeholder="Discount in %" />
-              <input name="rating" type="number" value={product.rating} onChange={handleChange} placeholder="Rating" />
-              <input name="stock" type="number" value={product.stock} onChange={handleChange} placeholder="Stock" />
-              <input name="brand" type="text" value={product.brand} onChange={handleChange} placeholder="Brand" />
-              <input name="category" type="text" value={product.category} onChange={handleChange} placeholder="Category" />
-              <input name="thumbnail" type="url" value={product.thumbnail} onChange={handleChange} placeholder="Thumbnail URL" />
-              <input name="images" type="url" value={product.images} onChange={handleImage} placeholder="Image URL" /> */}
-
-// "id": 1,
-// "title": "iPhone 9",
-// "description": "An apple mobile which is nothing like apple",
-// "price": 549,
-// "discountPercentage": 12.96,
-// "rating": 4.69,
-// "stock": 94,
-// "brand": "Apple",
-// "category": "smartphones",
-// "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-// "images": [
-//   "https://www.apfelnews.de/wp-content/uploads/2020/02/iphone-2468714_1920.png",
-
 export default EditProduct;

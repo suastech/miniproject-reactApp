@@ -10,6 +10,7 @@ function AddProduct(props){
     const handleChange = (e) => {
         const newObject = {...newItem}; 
         newObject[e.target.name] = e.target.value;
+        console.log(e)
         setNewItem(newObject)
     }
 
@@ -38,8 +39,6 @@ function AddProduct(props){
     }
     
 
-    // addItem()
-
     return (
         <div className="add-product">
             <form onSubmit={handleSubmit} className="edit-form">
@@ -64,7 +63,8 @@ function AddProduct(props){
               <input name="rating" type="number" id="rating" min="1" max="5" step=".01" onChange={handleChange} placeholder="4.5" required/>
               <input name="stock" type="number" id="stock" min="0" step="1" onChange={handleChange} placeholder="20" required/>
               <input name="brand" type="text" id="brand" onChange={handleChange} placeholder="Apple" required/>
-              <select name="category" id="category" onChange={handleChange} required>
+              <select name="category" id="category" defaultValue="" onChange={handleChange} required>
+                <option value="" disabled>---</option>
                 <option value="smartphones">Smartphones</option>
                 <option value="laptops">Laptops</option>
               </select>

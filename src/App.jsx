@@ -5,9 +5,9 @@ import './App.css'
 import ProductList from './components/ProductList.jsx';
 import AddProduct from './components/AddProduct.jsx';
 import EditProduct from './components/EditProduct.jsx';
-import Navbar from './components/NavbarX.jsx'
-import Sidebar from './components/SidebarX.jsx'
-import Footer from './components/FooterX.jsx'
+import Navbar from './components/Navbar.jsx'
+import Sidebar from './components/Sidebar.jsx'
+import Footer from './components/Footer.jsx'
 import ProductDetailView from './components/ProductDetailView.jsx'
 import About from './components/About.jsx';
 import NotFound from './components/NotFound.jsx';
