@@ -7,10 +7,6 @@ function AddProduct(props){
 
     const [newItem, setNewItem] = useState({});
 
-    const arrayOfIds = props.displayData.map ( element => element.id)
-    const biggestId = Math.max(... arrayOfIds)
-    console.log(biggestId)
-
     const handleChange = (e) => {
         const newObject = {...newItem}; 
         newObject[e.target.name] = e.target.value;
@@ -50,15 +46,15 @@ function AddProduct(props){
             <h4>Add Product</h4>
             <div className="form-wrapper">
                 <div className="labels">
-                        <label for="title">Title</label>
-                        <label for="description">Description</label>
-                        <label for="price">Price ($)</label>
-                        <label for="discountPercentage">Discount (%)</label>
-                        <label for="rating">Rating (1-5)</label>
-                        <label for="stock">Stock (# items)</label>
-                        <label for="brand">Brand</label>
-                        <label for="category">Category</label>
-                        <label for="images">Image (URL)</label>
+                        <label htmlFor="title">Title</label>
+                        <label htmlFor="description">Description</label>
+                        <label htmlFor="price">Price ($)</label>
+                        <label htmlFor="discountPercentage">Discount (%)</label>
+                        <label htmlFor="rating">Rating (1-5)</label>
+                        <label htmlFor="stock">Stock (# items)</label>
+                        <label htmlFor="brand">Brand</label>
+                        <label htmlFor="category">Category</label>
+                        <label htmlFor="images">Image (URL)</label>
                     </div>
                 <div className="inputs">
               <input name="title" id="title" type="text" onChange={handleChange} placeholder="Title" required/>
@@ -80,18 +76,5 @@ function AddProduct(props){
         </div>
     )
 }
-
-// "id": 1,
-// "title": "iPhone 9",
-// "description": "An apple mobile which is nothing like apple",
-// "price": 549,
-// "discountPercentage": 12.96,
-// "rating": 4.69,
-// "stock": 94,
-// "brand": "Apple",
-// "category": "smartphones",
-// "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-// "images": [
-//   "https://www.apfelnews.de/wp-content/uploads/2020/02/iphone-2468714_1920.png",
 
 export default AddProduct;

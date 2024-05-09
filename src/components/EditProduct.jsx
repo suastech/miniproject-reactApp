@@ -52,15 +52,15 @@ function EditProduct(props){
               <h4>Edit Product Details</h4>
               <div className="form-wrapper">
                 <div className="labels">
-                    <label for="title">Title</label>
-                    <label for="description">Description</label>
-                    <label for="price">Price ($)</label>
-                    <label for="discountPercentage">Discount (%)</label>
-                    <label for="rating">Rating (1-5)</label>
-                    <label for="stock">Stock (# items)</label>
-                    <label for="brand">Brand</label>
-                    <label for="category">Category</label>
-                    <label for="images">Image (URL)</label>
+                    <label htmlFor="title">Title</label>
+                    <label htmlFor="description">Description</label>
+                    <label htmlFor="price">Price ($)</label>
+                    <label htmlFor="discountPercentage">Discount (%)</label>
+                    <label htmlFor="rating">Rating (1-5)</label>
+                    <label htmlFor="stock">Stock (# items)</label>
+                    <label htmlFor="brand">Brand</label>
+                    <label htmlFor="category">Category</label>
+                    <label htmlFor="images">Image (URL)</label>
                 </div>
                 <div className="inputs">
                     <input name="title" id="title" type="text" onChange={handleChange} value={newItem.title} placeholder={product.title} required/>

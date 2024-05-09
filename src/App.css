@@ -33,13 +33,6 @@ h2{
 
 .sidebar {
   width: 15%;
-  /* border-right: 1px solid rgb(3, 135, 243); */
-  /* border-image: 
-    linear-gradient(
-      to bottom, 
-      rgb(3, 135, 243), 
-      rgba(0, 0, 0, 0)
-    ) 1 100%; */
 }
 
 button {
@@ -171,6 +164,12 @@ hr {
   font-family: Arial;
 }
 
+.labels label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .inputs{
   display: flex;
   flex-direction: column;
@@ -183,7 +182,6 @@ hr {
   margin: 5px;
   text-indent: 5px;
   padding: 1px 2px;
-  vertical-align: middle;
 }
 .edit-form h4 {
   margin: 5px 0;
