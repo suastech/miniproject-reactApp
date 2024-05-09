@@ -27,7 +27,7 @@ function AddProduct(props){
         newDisplayData.push(newItem);
 
         props.setDisplayData(newDisplayData);
-        navigate(`/products/${newItem.id}`)
+        navigate(`/`)
     }
 
 
