@@ -71,7 +71,7 @@ a.active {
 }
 
 hr {
-  margin-top: 10px;
+  margin-top: 15px;
   width: 100%;
   border: 0;
   height: 1px;
@@ -121,8 +121,9 @@ hr {
   }
 }
 
-.add-product{
+.add-product, .edit-product{
   width: 85%;
+  margin-top: 20px;
 }
 
 .product-details{
@@ -203,8 +204,4 @@ hr {
     transform: scale(.95);
   }
 
-}
-
-.back-btn{
-  width: 100px;
 }

@@ -28,7 +28,7 @@ function ProductDetails(props){
         <p>Stock: {product.stock} items</p>
         <p>Category: {product.category}</p>
         <p><img src={product.images[0]}/></p>
-        <Link to={`/`}><button className="back-btn">Back</button></Link>
+        <Link to={`/`}><button className="back-btn">Back to Overview</button></Link>
 
 
         </div>

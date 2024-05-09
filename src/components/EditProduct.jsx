@@ -47,7 +47,7 @@ function EditProduct(props){
     }
     
     return (
-        <div className="add-product">
+        <div className="edit-product">
             <form onSubmit={handleSubmit} className="edit-form">
               <h4>Edit Product Details</h4>
               <div className="form-wrapper">
@@ -66,9 +66,9 @@ function EditProduct(props){
                     <input name="title" id="title" type="text" onChange={handleChange} value={newItem.title} placeholder={product.title} required/>
                     <input name="description" id="description" type="text" onChange={handleChange} value ={newItem.description} required />
                     <input name="price" id="price" type="number" onChange={handleChange} value={newItem.price} required/>
-                    <input name="discountPercentage" id="discountPercentage" type="number" onChange={handleChange} value={newItem.discountPercentage} required />
-                    <input name="rating" type="number" id="rating" onChange={handleChange} value={newItem.rating} required />
-                    <input name="stock" type="number" id="stock" onChange={handleChange} value={newItem.stock} required />
+                    <input name="discountPercentage" id="discountPercentage" min="0" max="100" step=".01" type="number" onChange={handleChange} value={newItem.discountPercentage} required />
+                    <input name="rating" type="number" id="rating" min="1" max="5" step=".01" onChange={handleChange} value={newItem.rating} required />
+                    <input name="stock" type="number" id="stock" min="0" step="1" onChange={handleChange} value={newItem.stock} required />
                     <input name="brand" type="text" id="brand" onChange={handleChange} value={newItem.brand} required/>
                     <select name="category" id="category" defaultValue={newItem.category} onChange={handleChange} required>
                         <option value="smartphones">Smartphones</option>

@@ -47,21 +47,35 @@ function AddProduct(props){
     return (
         <div className="add-product">
             <form onSubmit={handleSubmit} className="edit-form">
-              <input name="title" type="text" onChange={handleChange} placeholder="Title" required/>
-              <input name="description" type="text" onChange={handleChange} placeholder="Description" required />
-              <input name="price" type="number" onChange={handleChange} placeholder="Price in $" required/>
-              <input name="discountPercentage" type="number" onChange={handleChange} placeholder="Discount in %" required />
-              <input name="rating" type="number" onChange={handleChange} placeholder="Rating" required/>
-              <input name="stock" type="number" onChange={handleChange} placeholder="Stock" required/>
-              <input name="brand" type="text" onChange={handleChange} placeholder="Brand" required/>
-              {/* <input name="category" type="text" onChange={handleChange} placeholder="Category" /> */}
-              <select name="category" onChange={handleChange} required>
-                <option selected value="smartphones">Smartphones</option>
+            <h4>Add Product</h4>
+            <div className="form-wrapper">
+                <div className="labels">
+                        <label for="title">Title</label>
+                        <label for="description">Description</label>
+                        <label for="price">Price ($)</label>
+                        <label for="discountPercentage">Discount (%)</label>
+                        <label for="rating">Rating (1-5)</label>
+                        <label for="stock">Stock (# items)</label>
+                        <label for="brand">Brand</label>
+                        <label for="category">Category</label>
+                        <label for="images">Image (URL)</label>
+                    </div>
+                <div className="inputs">
+              <input name="title" id="title" type="text" onChange={handleChange} placeholder="Title" required/>
+              <input name="description" id="description" type="text" onChange={handleChange} placeholder="Description" required />
+              <input name="price" id="price" type="number" onChange={handleChange} placeholder="Price in $" required/>
+              <input name="discountPercentage" id="discountPercentage" min="0" max="100" step=".01" type="number" onChange={handleChange} placeholder="Discount in %" required />
+              <input name="rating" type="number" id="rating" min="1" max="5" step=".01" onChange={handleChange} placeholder="Rating" required/>
+              <input name="stock" type="number" id="stock" min="0" step="1" onChange={handleChange} placeholder="Stock" required/>
+              <input name="brand" type="text" id="brand" onChange={handleChange} placeholder="Brand" required/>
+              <select name="category" id="category" onChange={handleChange} required>
+                <option value="smartphones">Smartphones</option>
                 <option value="laptops">Laptops</option>
               </select>
-              <input name="thumbnail" type="url" onChange={handleChange} placeholder="Thumbnail URL" required/>
-              <input name="images" type="url" onChange={handleImage} placeholder="Image URL" required/>
-                <button>Add Product</button>
+              <input name="images" id="images" type="url" onChange={handleImage} placeholder="Image URL" required/>
+              </div>
+            </div>
+            <button>Add Product</button>
             </form>
         </div>
     )
