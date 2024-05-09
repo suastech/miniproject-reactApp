@@ -11,7 +11,7 @@ import Footer from './components/Footer.jsx'
 import ProductDetailView from './components/ProductDetailView.jsx'
 import About from './components/About.jsx';
 import NotFound from './components/NotFound.jsx';
-import ProductData from './products.json';
+import ProductData from './assets/products.json';
 
 
 function App() {
