@@ -23,7 +23,7 @@ function ProductDetails(props){
         {/* need to add styles to that class */}
         <h3>{product.brand} - {product.title}</h3>
         <p>{product.description}</p>
-        <p>Price: {product.price}$ ({product.discountPercentage}% discount)</p>
+        <p>Price: ${product.price} ({product.discountPercentage}% discount)</p>
         <p>Rating: {product.rating}</p>
         <p>Stock: {product.stock} items</p>
         <p>Category: {product.category}</p>

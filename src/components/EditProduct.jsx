@@ -49,21 +49,34 @@ function EditProduct(props){
     return (
         <div className="add-product">
             <form onSubmit={handleSubmit} className="edit-form">
-              <h4>Introduce the new values</h4>
-              <input name="title" type="text" onChange={handleChange} placeholder={product.title} />
-              <input name="description" type="text" onChange={handleChange} placeholder={product.description} />
-              <input name="price" type="number" onChange={handleChange} placeholder={product.price} />
-              <input name="discountPercentage" type="number" onChange={handleChange} placeholder={product.discountPercentage} />
-              <input name="rating" type="number" onChange={handleChange} placeholder={product.rating} />
-              <input name="stock" type="number" onChange={handleChange} placeholder={product.stock} />
-              <input name="brand" type="text" onChange={handleChange} placeholder={product.brand} />
-              <select name="category" onChange={handleChange}>
-                <option value="smartphones" selected={product.category == "smartphones"}>Smartphones</option>
-                <option value="laptops" selected={product.category == "laptops"}>Laptops</option>
-              </select>
-              {/* <input name="category" type="text" onChange={handleChange} placeholder={product.category} /> */}
-              <input name="thumbnail" type="url" onChange={handleChange} placeholder={product.thumbnail} />
-              <input name="images" type="url" onChange={handleImage} placeholder={product.images} />             
+              <h4>Edit Product Details</h4>
+              <div className="form-wrapper">
+                <div className="labels">
+                    <label for="title">Title</label>
+                    <label for="description">Description</label>
+                    <label for="price">Price ($)</label>
+                    <label for="discountPercentage">Discount (%)</label>
+                    <label for="rating">Rating (1-5)</label>
+                    <label for="stock">Stock (# items)</label>
+                    <label for="brand">Brand</label>
+                    <label for="category">Category</label>
+                    <label for="images">Image (URL)</label>
+                </div>
+                <div className="inputs">
+                    <input name="title" id="title" type="text" onChange={handleChange} value={newItem.title} placeholder={product.title} required/>
+                    <input name="description" id="description" type="text" onChange={handleChange} value ={newItem.description} required />
+                    <input name="price" id="price" type="number" onChange={handleChange} value={newItem.price} required/>
+                    <input name="discountPercentage" id="discountPercentage" type="number" onChange={handleChange} value={newItem.discountPercentage} required />
+                    <input name="rating" type="number" id="rating" onChange={handleChange} value={newItem.rating} required />
+                    <input name="stock" type="number" id="stock" onChange={handleChange} value={newItem.stock} required />
+                    <input name="brand" type="text" id="brand" onChange={handleChange} value={newItem.brand} required/>
+                    <select name="category" id="category" defaultValue={newItem.category} onChange={handleChange} required>
+                        <option value="smartphones">Smartphones</option>
+                        <option value="laptops">Laptops</option>
+                    </select>
+                    <input name="images" id="images" type="url" onChange={handleImage} value={newItem.images} required/>     
+                </div>
+              </div>     
               <button>Save changes</button>
             </form>
         </div>
