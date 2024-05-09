@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
+import image404 from "/404.png"
 
 // could recall this ProductSummary
 function ProductItem(props){
+    
+    const imageErrorHandler = (e) => {
+        e.target.src = image404;
+    }
+
     return (
     
     <div className="item-container">
-        {props.itemdata.images[0] ? <img src={props.itemdata.images[0]}/> : <img src="../logo.png"/>}
+        {props.itemdata.images[0] ? <img src={props.itemdata.images[0]} onError={imageErrorHandler}/> : <img src="../logo.png"/>}
         <p style={{width:'200px'}}>{props.itemdata.title}</p>
         <p>${props.itemdata.price}</p>
         <div>

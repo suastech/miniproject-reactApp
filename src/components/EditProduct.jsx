@@ -7,11 +7,7 @@ function EditProduct(props){
 
     const {productID} = useParams();
 
-    //console.log(productID)
-
     const product = props.displayData.find(element => element.id === parseInt(productID))
-
-    //console.log(product)
 
     const [newItem, setNewItem] = useState({...product});
 
@@ -29,13 +25,11 @@ function EditProduct(props){
 
       function editItem () {
         let id = parseInt(productID)
-        console.log(props.displayData[0])
 
         const foundElement = props.displayData.findIndex( element => element.id === id);
 
         const newArray = [... props.displayData]; 
         newArray.splice(foundElement,1, newItem);
-        console.log(newArray)
         props.setDisplayData(newArray);
         navigate(`/products/${productID}`)
       }

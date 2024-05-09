@@ -10,7 +10,6 @@ function AddProduct(props){
     const handleChange = (e) => {
         const newObject = {...newItem}; 
         newObject[e.target.name] = e.target.value;
-        console.log(e)
         setNewItem(newObject)
     }
 
@@ -29,7 +28,6 @@ function AddProduct(props){
 
         props.setDisplayData(newDisplayData);
         navigate(`/products/${newItem.id}`)
-        console.log(newDisplayData)
     }
 
 
