@@ -1,6 +1,5 @@
-import ProductItem from './productitem.jsx';
+import ProductSummary from './ProductSummary.jsx';
 
-// could recall this ProductList
 function Products(props){
 
     function removeItem(deleteItemID){
@@ -13,7 +12,7 @@ function Products(props){
         {props.displayData.map( (product, index) => {
             if(product.category === "smartphones" || product.category === "laptops") return (
                 <div key={index} className={ index %2 === 0? "pale-background": ""}  >
-                    <ProductItem  itemdata={product} deleteItem={removeItem}/>
+                    <ProductSummary  itemdata={product} deleteItem={removeItem}/>
                 </div>
             )
         })}

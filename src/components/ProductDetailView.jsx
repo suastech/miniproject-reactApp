@@ -1,13 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
-// import ProductData from '../products.json'; 
-// we cannot use props from a sibling, so i need to reimport or get it from app.jsx
 
 function ProductDetails(props){
-
-    // we are getting an object from useParams()
-
-    // let result = useParams()
-    // let ProductID = result.ProductID
 
     const {productID} = useParams();
 
@@ -20,7 +13,6 @@ function ProductDetails(props){
 
     return(
         <div className="product-details"> 
-        {/* need to add styles to that class */}
         <h3>{product.brand} - {product.title}</h3>
         <p>{product.description}</p>
         <p>Price: ${product.price} ({product.discountPercentage}% discount)</p>
